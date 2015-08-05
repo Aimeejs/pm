@@ -13,13 +13,18 @@ var pm = {
 
 	// 页面列表，以page.name为key
 	map: {},
+
 	// 页面列表，以page._id为key
 	pageHash: {},
+
 	// 页面列表，array
 	pageArray: [],
 
 	// 缓存上一页虚拟页信息
 	_prev: {},
+
+    // 缓存全局模块
+    app: {},
 
 	// 渲染Home页面
 	home: function(){
@@ -83,7 +88,7 @@ var pm = {
 		// 执行页面离开
 		this.leave();
 		this.page = this.pageHash[hash];
-		this.page.enter();
+        this.page.__enter();
 
 		console.log((this._prev.name || 'init') + ' => ' + this.page.name);
 	},
@@ -133,24 +138,4 @@ var pm = {
 	}
 };
 console.log('pm is init');
-module.exports = pm;
-window.pm = pm;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+module.exports = window.pm = pm;
