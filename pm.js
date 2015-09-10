@@ -73,8 +73,11 @@ var pm = {
 
 	// 离开虚拟页，缓存上一页
 	leave: function(){
-		this.page.name ? this.page.leave() : '';
+        if(this.page.name){
+            this.page.leave();
+            this.page.display = false;
 		this._prev = this.page;
+        }
 	},
 
 	// 加载虚拟页
@@ -89,6 +92,7 @@ var pm = {
 		this.leave();
 		this.page = this.pageHash[hash];
         this.page.__enter();
+        this.page.display = true;
 
 		console.log((this._prev.name || 'init') + ' => ' + this.page.name);
 	},
