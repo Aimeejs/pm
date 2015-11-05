@@ -1,25 +1,27 @@
 {
-	"name": "aimee-pm",
-	"description": "UZ构建工具pm模块，用于生成管理虚拟页面的底层框架",
-	"main": "pm.js",
-	"version": "1.0.0",
-	"scripts": {
-		"test": "uz -v"
-	},
-	"repository": {
-		"type": "git",
-		"url": "https://github.com/gavinning/aimee-pm.git"
-	},
-	"keywords": [
-		"aimee-pm",
-		"aimee",
-		"uz"
-	],
-	"author": "gavinning",
-	"license": "GPL-3.0",
-	"bugs": {
-		"url": "https://github.com/gavinning/aimee-pm/issues"
-	},
-	"homepage": "https://github.com/gavinning/aimee-pm",
-	"dependencies": {}
+    "name": "pm",
+    "aimee": "app",
+    "version": "1.0.0",
+    "description": "Aimeejs的pm模块，用于管理虚拟页",
+    "main": "pm.js",
+    "scripts": {
+        "test": "uz -v"
+    },
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Aimeejs/pm.git"
+    },
+    "keywords": [
+        "pm",
+        "aimee",
+        "aimee-pm",
+        "uz"
+    ],
+    "author": "gavinning",
+    "license": "GPL-3.0",
+    "bugs": {
+        "url": "https://github.com/Aimeejs/pm/issues"
+    },
+    "homepage": "https://github.com/Aimeejs/pm",
+    "dependencies": {}
 }
