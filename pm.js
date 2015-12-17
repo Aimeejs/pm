@@ -81,7 +81,7 @@ var pm = {
         if(this.page.name){
             this.page.leave();
             this.page.display = false;
-        this._prev = this.page;
+            this._prev = this.page;
         }
     },
 
@@ -108,7 +108,7 @@ var pm = {
             this.map[page.name] = page;
             this.pageHash[page._id] = page;
             this.pageArray.push(page);
-            arr.push(page.name);
+            arr.push(page._id.replace(/^\//, ''));
         };
 
         // 页面注册日志
