@@ -80,6 +80,7 @@ var pm = {
     leave: function(){
         if(this.page.name){
             this.page.leave();
+            this.page.getPage().hide();
             this.page.display = false;
             this._prev = this.page;
         }
