@@ -33,7 +33,7 @@ var pm = {
         if("onhashchange" in window){
             // 监听hashchange事件
             window.onhashchange = function(){
-                this.hashChange(location.hash);
+                pm.hashChange(location.hash);
             }
         }else{
             console.log('not support onhashchange event');
