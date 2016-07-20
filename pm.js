@@ -165,4 +165,5 @@ class PM {
 }
 
 console.log('pm is load');
-module.exports = window.pm = new PM;
+let pm = window.pm = new PM;
+export default pm;
